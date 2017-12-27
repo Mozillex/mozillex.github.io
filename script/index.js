@@ -1,24 +1,23 @@
+var pushMe = document.querySelector('#pushMe');
 
-var html = document.querySelector('html');
-var panel = document.createElement('div');
-panel.setAttribute('class','msgBox');
-html.appendChild(panel);
+pushMe.onclick = function(){
+	pushMe.parentNode.removeChild(pushMe);
+	var panel = document.createElement('div');
+	var msg = document.createElement('p');
+	var name = window.prompt ("Hi! What's your name?");
+	var popTop = document.querySelector("#popTop")
+	panel.setAttribute('class','msgBox');
+	popTop.appendChild(panel);
+	msg.textContent = name? "Well, hello there, " + name +"!" : "Hello!";
+	panel.appendChild(msg);
 
-var name = prompt("Hey, what's your name?");
+	var closeBtn = document.createElement('button');
+	closeBtn.setAttribute('id','closeBtn');
+	closeBtn.textContent = 'close';
+	panel.appendChild(closeBtn);
 
+	closeBtn.onclick = function(){
+		panel.parentNode.removeChild(panel);
+	}
 
-//creates the message to append/display
-var msg = document.createElement('p');
-(name)? msg.textContent = "Well, hello there, "+name+"!":msg.textContent = "Well, hello there, Captain Anonymous!";
-panel.appendChild(msg);
-
-//creates 'close' button, which removes the panel
-var closeBtn = document.createElement('button');
-closeBtn.setAttribute('id','closeBtn');
-closeBtn.textContent = 'close';
-panel.appendChild(closeBtn);
-
-//listens for the 'close' button click
-closeBtn.onclick = function(){
-	panel.parentNode.removeChild(panel);
 }
