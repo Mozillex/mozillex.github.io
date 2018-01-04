@@ -8,7 +8,7 @@ pushMe.onclick = function(){
 	var popTop = document.querySelector("#popTop")
 	panel.setAttribute('class','msgBox');
 	popTop.appendChild(panel);
-	msg.textContent = name? "Well, hello there, " + name +"!" : "Hello!";
+	msg.textContent = name? "Hello, " + name +"!" : "Hello!";
 	panel.appendChild(msg);
 
 	var closeBtn = document.createElement('button');
