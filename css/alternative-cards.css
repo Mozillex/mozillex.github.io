@@ -1,0 +1,29 @@
+.container-full-width {
+	background-color: #ffffff;
+	box-shadow: 4px 4px 5px #777777;
+	margin: auto;
+	width: 95%;
+}
+.card {
+	background-color: #ffffff;
+	box-shadow: 4px 4px 5px #777777;
+	/* color: darkslategrey; */
+	text-align: center;
+	/* padding: 0px 10px 0px 10px; */
+	/* margin: 4px; */
+	/* width: 30%; */
+	/* min-width: 300px; */
+	/* min-height: 300px; */
+	float: left;
+}
+
+h1 {
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.container-full-trans {
+	margin: auto;
+	width: 95%;
+}

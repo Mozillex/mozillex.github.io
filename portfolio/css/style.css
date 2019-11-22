@@ -1,0 +1,275 @@
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+	color: #888;
+	background-color: #888888;
+	/* background-color: #e7e7e7; */
+	margin: 0;
+	padding: 0;
+}
+
+.navMax {
+	max-width: 1200px;
+}
+
+header.navbar,
+footer,
+footer i,
+footer a,
+footer p,
+footer h2,
+footer h3,
+footer h4 {
+	background-color: royalblue;
+	color: #cfdbf7;
+	border-color: royalblue;
+	padding-top: 0.5em;
+}
+
+.navbar {
+	box-shadow: 0px 5px 5px #777777;
+}
+
+#mainPage {
+	background-color: white;
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+}
+
+#banner,
+#banner2 {
+	background-color: #aaaaaa;
+	color: #fff;
+	font-size: 1.15em;
+	padding: 5%;
+}
+
+#banner img {
+	border-radius: 50%;
+	margin: 30px 0 10px;
+	max-width: 80%;
+	height: auto;
+	width: 200px;
+	float: center;
+	box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#banner .about-me {
+	max-width: 700px;
+	float: left;
+}
+
+hr.star {
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.75),
+		rgba(255, 255, 255, 0)
+	);
+}
+
+hr.star-dark {
+	border: 0;
+	height: 2px;
+	background-image: linear-gradient(
+		to right,
+		rgba(136, 136, 136, 0),
+		rgba(136, 136, 136, 1),
+		rgba(135, 136, 136, 0)
+	);
+}
+
+h2 {
+	color: #8eb0ff;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+div .img-frame {
+	max-height: 355;
+	overflow: hidden;
+}
+
+img {
+	/* 	height: 100%; */
+	max-width: 100%;
+	width: auto;
+}
+
+a.scrollable {
+	color: #cfdbf7;
+}
+
+a:hover,
+a:focus {
+	color: #8eb0ff;
+	text-decoration: none;
+}
+
+#top-nav .container,
+main header,
+#portfolio .grid,
+#contact > div,
+footer #footer-above {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+
+#top-nav .container {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+#top-nav .container::before,
+#top-nav .container::after {
+	display: none;
+}
+
+#top-nav img {
+	height: 50px;
+	margin: 15px 0;
+}
+
+nav {
+	font-size: 13px;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+	nav {
+		padding: 5px;
+		text-align: center;
+		margin: 0 auto;
+		width: 120%;
+	}
+	nav .active a {
+		color: #8eb0ff;
+		background: #8eb0ff;
+		box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+	}
+}
+
+.nav > li {
+	height: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+}
+
+.nav > li a {
+	color: #ffffff;
+	padding: 10px 20px;
+}
+
+.nav > li a:hover {
+	color: #8eb0ff;
+	background: #bbb;
+	box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #8eb0ff;
+	background-color: #cfdbf7;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #8eb0ff;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+	color: #cfdbf7;
+}
+
+.navbar-toggle {
+	margin-right: 0;
+}
+
+#about {
+	height: 30px;
+	display: block;
+}
+
+#mainPage > *:not(.scroll-top) {
+	max-width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1023px) {
+	main header {
+		padding: 30px 30px;
+	}
+}
+
+.button {
+	color: #fff;
+	border: solid 2px #fff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 48px;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+	border: solid 2px #fff;
+	color: #8eb0ff;
+	background: #fff;
+}
+
+.scroll-top {
+	z-index: 1049;
+	position: fixed;
+	visibility: visible;
+	bottom: 2%;
+	right: 2%;
+}
+
+.scroll-top a {
+	background: #722872;
+}
+
+.scroll-top a:hover,
+.scroll-top a:focus {
+	color: #8eb0ff;
+	background-color: #bbb;
+	border-color: #8eb0ff;
+}
+
+@media (min-width: 768px) {
+	.scroll-top a {
+		visibility: hidden;
+	}
+}
